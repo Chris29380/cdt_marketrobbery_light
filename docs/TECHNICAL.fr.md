@@ -1,5 +1,7 @@
 # CDT Market Robbery Light
 
+**Français** · [English](TECHNICAL.en.md) · [README](../README.md)
+
 ## Module Premium facultatif
 
 Depuis la version 1.1.0, un seul module `cdt_marketrobbery_premium` peut ajouter les otages, les enquêtes et les réglages avancés. Depuis la version 1.2.0, son activation peut aussi se faire depuis l'interface. La Light fonctionne seule sans ce dossier. Les gains, délais et supérettes existants sont conservés.
@@ -112,3 +114,7 @@ Les images Ox/QB gardent leur résolution native. Les catalogues Quasar et Core 
 Les tests simulent 15 combinaisons ESX/QBCore/Qbox avec les cinq nouveaux adaptateurs, les capacités, arrêts, refus, retours sans valeur et récompenses. Ils ne certifient pas l’exécution des ressources commerciales en jeu. Tester sur le serveur : inventaire plein (slots et poids), comptes monétaires, armes, images et prise simultanée du même lot à deux joueurs. Les fichiers spécifiques du module Premium ne sont pas modifiés par cette mise à jour Light.
 
 Références : [QB](https://qbcore.org/docs/qbcore-resources/qb-inventory), [Ox](https://github.com/overextended/ox_inventory/blob/main/modules/inventory/server.lua), [Quasar](https://www.quasar-store.com/docs/inventory/commands-and-exports), [Origen](https://docs.origennetwork.com/scripts/origen_inventory/exports), [Core](https://docs.c8re.store/core-inventory/exports), [TGIANN](https://tgiann.gitbook.io/tgiann/scripts/tgiann-inventory/exports/server), [Jaksam](https://documentation.jaksam-scripts.com/jaksam-inventory/functions/server).
+
+## Support et informations Premium
+
+**[Rejoignez notre Discord pour le support et les informations sur le module Premium](https://discord.gg/yNkYVhNCQQ)**

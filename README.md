@@ -1,5 +1,9 @@
 # CDT Market Robbery Light
 
+**Compatible ESX · Qbox · QBCore**  
+**FR :** Prise en charge des trois frameworks via les bridges intégrés.  
+**EN:** All three frameworks supported through built-in bridges.
+
 **[Français](#fr) · [English](#en)**
 
 Free convenience store robberies for FiveM · Braquages de supérettes gratuits pour FiveM.
@@ -138,7 +142,7 @@ Besoin d'aide pour installer la Light, configurer votre serveur ou en savoir plu
 
 ### Documentation
 
-- [Notes techniques détaillées en français](docs/TECHNICAL.fr.md).
+- Notes techniques détaillées : [Français](docs/TECHNICAL.fr.md) · [English](docs/TECHNICAL.en.md).
 - Documentation dédiée : **en cours de préparation**.
 - Après installation, testez un braquage complet, un inventaire plein et une prise simultanée du butin à deux joueurs. Les animations et les mappings doivent être validés sur votre serveur.
 
@@ -276,7 +280,7 @@ Need help installing Light, configuring your server or learning more about the P
 
 ### Documentation
 
-- [Detailed technical notes in French](docs/TECHNICAL.fr.md).
+- Detailed technical notes: [English](docs/TECHNICAL.en.md) · [Français](docs/TECHNICAL.fr.md).
 - Dedicated documentation: **coming soon**.
 - After installation, test a full robbery, a full inventory and two players collecting loot simultaneously. Animations and map compatibility must be checked on your server.
 
