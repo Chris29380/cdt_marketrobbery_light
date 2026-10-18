@@ -1,0 +1,38 @@
+/* Cartes de configuration, limitées au panneau administrateur. */
+#admin .tabs{display:flex;flex-wrap:nowrap;gap:8px;overflow-x:auto;overflow-y:hidden;flex-shrink:0;padding:4px 0 12px;scrollbar-width:thin;scrollbar-color:var(--accent-line) transparent}
+#admin .tabs .config-step-card{position:relative;flex:0 0 116px;min-height:108px;padding:6px 8px 10px;display:flex;flex-direction:column;align-items:flex-start;gap:4px;white-space:normal;text-align:left;border:1px solid var(--border-light);border-radius:10px;background:#12171b;transition:background .15s,border-color .15s}
+#admin .tabs .config-step-card.active{border-color:var(--accent);background:#14281f;box-shadow:inset 0 -3px var(--accent)}
+#admin .tabs .config-step-card:disabled{cursor:not-allowed;opacity:.4}
+.config-step-card .step-illustration{width:76px;height:49px;object-fit:contain;align-self:center}
+.config-step-card .step-number{position:absolute;top:9px;left:9px;font:600 10px Consolas,monospace;color:var(--text-muted)}
+.config-step-card .step-name{font-size:11px;font-weight:600;line-height:1.35;color:var(--text-primary)}
+#admin .wizard-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:8px}
+#admin .wizard-steps .config-step-card{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:102px;gap:5px;text-align:center;white-space:normal;border-radius:10px}
+#admin .illustrated-section{position:relative;overflow:hidden;border:1px solid var(--border-light);border-radius:14px;background:linear-gradient(130deg,#151c21,#111518 65%);padding:20px;margin-bottom:16px}
+#admin .illustrated-section>.section-heading{position:relative;min-height:53px;display:flex;align-items:center;padding-right:85px;margin-bottom:8px}
+.section-illustration{position:absolute;right:0;top:-8px;width:82px;height:67px;object-fit:contain}
+#admin .illustrated-section>.section-help{max-width:850px;line-height:1.65;margin-bottom:18px;color:var(--text-secondary)}
+#admin .config-step-hero{min-height:136px;padding-right:185px;background:linear-gradient(110deg,#182e27,#142122 65%,#17232d);border-color:var(--accent-line)}
+#admin .config-step-hero>.section-heading{min-height:0;padding-right:0}
+#admin .config-step-hero>.section-heading>.section-illustration{display:none}
+.hero-illustration{position:absolute;right:18px;top:9px;width:158px;height:113px;object-fit:contain}
+.step-description{color:var(--accent);font-size:13px;font-weight:600;margin-top:12px}
+#admin .config-field-card{position:relative;min-width:0;border:1px solid var(--border);border-radius:10px;background:#0d1216;padding:13px;gap:9px;margin-top:10px}
+#admin .config-field-card>span:first-child{display:block;min-height:24px;padding-right:35px;font-size:12px;line-height:1.5;color:var(--text-secondary)}
+.field-illustration{position:absolute;top:8px;right:9px;width:33px;height:27px;object-fit:contain;opacity:.8;pointer-events:none}
+#admin .config-field-card>input,#admin .config-field-card>select{margin-top:5px;background:#090d10;border-color:#334047;min-height:38px}
+#admin .config-field-card>input[type=checkbox]{width:38px;height:23px;min-height:0;cursor:pointer}
+#admin .config-field-card:focus-within{border-color:var(--accent-line);background:#101b19}
+#admin .config-field-card.error{border-color:var(--danger)}
+#admin .config-field-card>small{display:block;margin-top:8px;color:var(--text-muted);font-weight:400;letter-spacing:0;line-height:1.5}
+#admin .dashboard-store{position:relative;overflow:hidden}
+.store-illustration{width:100%;height:95px;object-fit:contain;order:-1;margin-bottom:15px;border-radius:10px;background:linear-gradient(110deg,#163126,#16212b)}
+#admin .illustrated-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:16px 0}
+#admin .illustrated-choice{display:flex;position:relative;flex-direction:column;align-items:center;gap:8px;padding:14px 8px;border-radius:12px;background:#0d151a;text-align:center;min-width:0}
+.choice-illustration{width:112px;max-width:100%;height:78px;object-fit:contain}
+#admin .illustrated-choice strong{font-size:12px;line-height:1.45}
+#admin .illustrated-choice.selected{border-color:var(--accent);background:#143126;color:var(--accent)}
+#admin .illustrated-choice.selected:after{content:'✓';position:absolute;top:8px;right:10px;font-weight:700;color:var(--accent)}
+@media(max-width:1050px){#admin .tabs .config-step-card{flex-basis:100px;min-height:99px}.config-step-card .step-illustration{height:42px}#admin .illustrated-section{padding:16px}#admin .config-step-hero{padding-right:140px}.hero-illustration{width:120px;right:10px}}
+@media(max-height:800px){#admin{inset:2vh 3vw}#admin>header{padding:14px 24px}#admin .heading p{display:none}#admin .brand{font-size:24px}#admin .workspace{padding-top:14px}#admin .store-heading{margin-bottom:12px}#admin .tabs .config-step-card{min-height:76px}.config-step-card .step-illustration{height:28px}#admin .config-step-hero{min-height:88px;padding-top:14px;padding-bottom:14px}#admin .config-step-hero>.section-help{display:none}.hero-illustration{height:74px}.step-description{margin-top:8px}#admin .editor{padding-top:12px}#admin>footer{padding:12px 24px}}
+@media(max-width:720px){#admin .config-step-hero{padding-right:16px}.hero-illustration{display:none}#admin .grid{grid-template-columns:1fr}}

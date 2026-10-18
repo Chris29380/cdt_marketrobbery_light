@@ -1,0 +1,13 @@
+.safe-panel{background:rgba(12,13,15,.86);border-color:var(--border-light);border-radius:var(--radius-lg);box-shadow:0 25px 90px #0008;padding:26px}
+.safe-panel .safe-header{padding-bottom:18px;border-bottom:1px solid var(--border-light);gap:16px}
+.safe-panel .safe-header h1{font-size:23px;font-weight:650;letter-spacing:-.6px}
+.safe-panel .safe-info{align-items:center;gap:12px;padding:12px 14px;margin:18px 0 10px;background:rgba(17,18,21,.7);border:1px solid var(--border-light);border-radius:var(--radius-md)}
+.safe-clock{display:flex;align-items:center;gap:10px;color:var(--text-muted);font-size:11px}
+#safe-timer{font-size:21px;font-weight:600;letter-spacing:.5px;white-space:nowrap}
+#safe-timer.is-urgent{color:var(--danger)}
+.safe-panel #safe-cue{padding:12px 14px;background:var(--accent-dim);border:1px solid var(--accent-line);border-radius:var(--radius-md);font-size:13px;line-height:1.6}
+.safe-panel #safe-direction{margin:12px 0 18px;padding:9px 12px;color:var(--accent);font-size:14px;font-weight:650;border:1px solid var(--accent-line);border-radius:var(--radius-sm);background:var(--accent-dim)}
+.safe-panel .dial.near{box-shadow:0 0 0 1px var(--accent-line),0 0 14px #22db8012,inset 0 0 25px #000}
+.safe-panel .dial-controls button{background:rgba(17,18,21,.8);border-radius:var(--radius-sm)}
+.safe-panel .dial-controls .accent{background:var(--accent-dim);border-color:var(--accent-line)}
+@media(max-width:550px){.safe-panel{width:95vw;padding:18px}.safe-clock{flex-direction:column;align-items:flex-end;gap:3px}}

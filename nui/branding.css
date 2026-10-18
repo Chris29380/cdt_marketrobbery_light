@@ -1,0 +1,4 @@
+#admin .acstudio-link{display:inline-flex;align-items:center;gap:8px;margin-top:12px;color:var(--text-muted);font-size:11px;text-decoration:none;opacity:.65;transition:opacity .15s}
+#admin .acstudio-link img{display:block;width:32px;height:32px;object-fit:contain;border-radius:50%}
+#admin .acstudio-link:hover,#admin .acstudio-link:focus-visible{opacity:1;color:var(--text-secondary)}
+#admin .acstudio-link:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:4px}
