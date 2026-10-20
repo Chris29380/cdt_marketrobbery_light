@@ -4,6 +4,7 @@ Config = {
     framework = 'auto', -- auto | qbox | qbcore | esx
     inventory = 'auto', -- auto | ox | qb | qs | origen | core | tgiann | jaksam | framework | custom (server/inventory_custom.lua)
     adminAce = 'cdt.market.light.admin',
+    policeAce = 'cdt.market.light.police', -- Permission des interventions du module Premium.
     adminGroups = { admin = true, owner = true, superadmin = true, god = true },
     policeJobs = { police = true, sheriff = true },
     policeCanRob = true, -- false : ces métiers ne peuvent pas braquer, même hors service

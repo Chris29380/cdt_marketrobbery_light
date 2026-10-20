@@ -663,7 +663,11 @@ CreateThread(function()
                 release(src,false);TriggerClientEvent('cdt_market_light:cancel',src)
             else
             if a.stage=='register' and now<=a.expires and near(src,storeById(a.store),a.position,2.5) then dropRegister(a) end
-            if now>a.expires or not near(src,storeById(a.store),a.position,a.stage=='intimidate' and 5 or 2.5) then release(src,true); TriggerClientEvent('cdt_market_light:cancel',src) end
+            if now>a.expires or not near(src,storeById(a.store),a.position,a.stage=='intimidate' and 5 or 2.5) then
+                local ped=GetPlayerPed(src)
+                safeDebug('action_cancelled',{player=src,stage=a.stage,store=a.store,expired=now>a.expires,bucket=GetPlayerRoutingBucket(src),health=ped and ped~=0 and GetEntityHealth(ped) or nil,position=ped and ped~=0 and GetEntityCoords(ped) or nil,expected=a.position,center=storeById(a.store).center,radius=storeById(a.store).radius})
+                release(src,true,'expired_or_invalid_position'); TriggerClientEvent('cdt_market_light:cancel',src)
+            end
             end
         end
         for id,st in pairs(states) do
